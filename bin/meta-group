@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+let loaded = false;
+if (!loaded) {
+  const program = require('commander');
+  program
+    .command('add', 'add project to group')
+    .command('delete', 'delete entire group')
+    .command('list', 'list projects in group')
+    .command('remove', 'remove project from group')
+    .parse(process.argv);
+  loaded = true;
+}
