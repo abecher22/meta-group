@@ -1,32 +1,26 @@
-[![Build Status](https://travis-ci.com/mateodelnorte/meta-project.svg?branch=master)](https://travis-ci.com/mateodelnorte/meta-project)
+[![Build Status](https://travis-ci.com/abecher22/meta-group.svg?branch=master)](https://travis-ci.com/abecher22/meta-group)
 
-# meta-project
+# meta-group
 
-project plugin for [meta](https://github.com/mateodelnorte/meta)
+group plugin for [meta](https://github.com/mateodelnorte/meta)
 
 ## Usage
 
-```
-  Usage: meta project [options] [command]
+```usage
+Usage: meta group [options] [command]
 
-
-  Commands:
-
-    create      create and initialize a new child repository
-    import      import an existing child repository via git clone
-    migrate     migrate from a monorepo to a metarepo
+Commands:
+    add         add a folder to a group creating the group if necessary
+    delete      delete an entire group
+    list        show folders in a group
+    remove      remove a folder from a group
     help [cmd]  display help for [cmd]
 
   Options:
-
     -h, --help  output usage information
 
-```
-
-```
-  usage:
-
-    meta project create <destFolder> <childRepoUrl>
-    meta project import <destFolder> <childRepoUrl>
-    meta project migrate <destFolder> <childRepoUrl>
+  meta group add <group> <destFolder>
+  meta group delete <group>
+  meta group list <group>
+  meta group remove <group> <destFolder>
 ```
